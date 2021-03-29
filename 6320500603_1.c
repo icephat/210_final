@@ -16,7 +16,7 @@ int main()
             b=10-a;
             n=n+b;
         }
-        k+=n+c;
+        k=n+c;
         printf("%d",k);
     }
 
