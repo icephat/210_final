@@ -58,7 +58,6 @@ int main()
             }
 
         }
-
         if(k>0)
         {
             printf("%d %d",l+1,max);
