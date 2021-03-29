@@ -17,7 +17,15 @@ int main()
             max=a[i];
         }
     }
-
+    min=a[0];
+    for(i=1;i<n;i++)
+    {
+        if(min>a[i])
+        {
+            min=a[i];
+        }
+    }
+    printf("%d %d",min,max);
 
     return 0;
 }
