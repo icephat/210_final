@@ -12,6 +12,7 @@ int main()
             scanf("%d",&a[i]);
         }
         int max=a[0];
+        min=a[0];
         for(i=1;i<n;i++)
         {
             if(max<a[i])
@@ -19,19 +20,15 @@ int main()
                 max=a[i];
                 x=i;
             }
+            else if(min>a[i])
+            {
+                min=a[i];
+            }
             if(max==a[i+1])
             {
                 k++;
             }
 
-        }
-        min=a[0];
-        for(i=1;i<n;i++)
-        {
-            if(min>a[i])
-            {
-                min=a[i];
-            }
         }
         if(k>0)
         {
