@@ -31,6 +31,7 @@ int main()
         }
 
     }
+
     if(n>2&&n<=1000)
     {
         int a[n],i,l=0,min,k=0,x=0;
@@ -58,6 +59,7 @@ int main()
             }
 
         }
+
         if(k>0)
         {
             printf("%d %d",l+1,max);

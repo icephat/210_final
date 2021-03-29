@@ -10,7 +10,6 @@ int main()
    {
        for(j=0;j<a;j++)
        {
-           x[i][j]=0;
            scanf("%d",x[j]);
            sum+=x[j];
        }
