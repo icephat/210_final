@@ -4,28 +4,46 @@ int main()
     int n;
     scanf("%d",&n);
 
-    int a[n],i,min;
-    for(i=0;i<n;i++)
+    if(n>=2&&n<=1000)
     {
-        scanf("%d",&a[i]);
-    }
-    int max=a[0];
-    for(i=1;i<n;i++)
-    {
-        if(max<a[i])
+        int a[n],i,min,k=0,x=0;
+        for(i=0;i<n;i++)
         {
-            max=a[i];
+            scanf("%d",&a[i]);
+        }
+        int max=a[0];
+        for(i=1;i<n;i++)
+        {
+            if(max<a[i])
+            {
+                max=a[i];
+                x=i;
+            }
+            if(max==a[i+1])
+            {
+                k++;
+            }
+
+        }
+        min=a[0];
+        for(i=1;i<n;i++)
+        {
+            if(min>a[i])
+            {
+                min=a[i];
+            }
+        }
+        if(k>0)
+        {
+            printf("%d %d",min,max);
+        }
+        else
+        {
+            printf("%d",x+1);
         }
     }
-    min=a[0];
-    for(i=1;i<n;i++)
-    {
-        if(min>a[i])
-        {
-            min=a[i];
-        }
-    }
-    printf("%d %d",min,max);
+
+
 
     return 0;
 }
