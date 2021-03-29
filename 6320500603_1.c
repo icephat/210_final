@@ -7,17 +7,21 @@ int main()
     if(n>0&&n<32750)
     {
         a=n%10;
-        if(a<5)
+        if(a<=5)
         {
             n=n-a;
         }
-        else if(a>4)
+        else if(a>5)
         {
             b=10-a;
             n=n+b;
         }
         k=n+c;
-        printf("%d",k);
+        if(k>n)
+        {
+            printf("%d",k);
+        }
+
     }
 
 
